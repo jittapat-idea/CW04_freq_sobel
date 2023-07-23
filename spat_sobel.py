@@ -5,8 +5,8 @@ img = cv2.imread("pic/Tamamo.png",cv2.IMREAD_GRAYSCALE)
 
 laplacian = cv2.Laplacian(img,cv2.CV_64F)
 
-sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
-sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
+sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=3)
+sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=3)
 
 kernel = np.array([[1,2,1],
                   [0,0,0],

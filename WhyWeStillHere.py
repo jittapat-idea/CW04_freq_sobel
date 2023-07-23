@@ -37,5 +37,6 @@ freq_umat = cv2.normalize(output,None,0,255,cv2.NORM_MINMAX,cv2.CV_8U)
 
 combined_image = cv2.hconcat([spatz,  freq_umat])
 cv2.imshow('spat vs freq',combined_image)
+cv2.imwrite('classwork4/spat vs freq.png',combined_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
